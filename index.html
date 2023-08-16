@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Baap Er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-4">Functional <span class="text-red-500 font-medium">Baap er Bank</span>!!!
+        </h1>
+    </header>
+    <!-- balance and transaction summary -->
+    <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+            <div class="bg-yellow-400 p-8 rounded-lg">
+                <h4 class="text-3xl">Deposit</h4>
+                <h2 class="text-5xl font-medium">$<span id="deposit-total">00</span></h2>
+            </div>
+            <div class="bg-red-400 p-8 rounded-lg">
+                <h4 class="text-3xl">Withdraw</h4>
+                <h2 class="text-5xl font-medium">$<span id="withdraw-total">00</span></h2>
+            </div>
+            <div class="bg-blue-400 p-8 rounded-lg">
+                <h4 class="text-3xl">Balance</h4>
+                <h2 class="text-5xl font-medium">$<span id="balance-total">1240</span></h2>
+            </div>
+        </div>
+    </section>
+    <!-- deposit and withdraw section -->
+    <section>
+        <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+            <div class="bg-purple-400 mt-8 rounded-lg px-4 py-2">
+                <h3 class="text-3xl text-white">My Deposit</h3>
+                <input id="" class="block w-3/4 rounded px-4 py-2 my-2" type="text" name=""
+                    placeholder="$ amount to deposit">
+                <button id="btn-deposit"
+                    class="bg-blue-400 hover:bg-blue-600 px-4 py-2 rounded text-white text-sm font-semibold">Deposit</button>
+            </div>
+            <div class="bg-sky-400 mt-8 rounded-lg px-4 py-2">
+                <h3 class="text-3xl text-white">My Withdraw</h3>
+                <input id="" class="block w-3/4 rounded px-4 py-2 my-2" type="text" name=""
+                    placeholder="$ amount to withdraw">
+                <button id="btn-deposit"
+                    class="bg-blue-400 hover:bg-blue-600 px-4 py-2 rounded text-white text-sm font-semibold">Withdraw</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
